@@ -1,0 +1,1985 @@
+{
+  "items": [
+    {
+      "id": 6995635493,
+      "title": "Our Legacy Denim Print Jeans",
+      "price": {
+        "amount": "175.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Our Legacy",
+      "path": "/items/6995635493-our-legacy-denim-print-jeans",
+      "user": {
+        "id": 80728677,
+        "login": "davidlopes1234",
+        "profile_url": "https://www.vinted.fr/member/80728677-davidlopes1234",
+        "photo": {
+          "id": 227265650,
+          "width": 600,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/02_00fea_B5TuAoehWqJQTjiYaprjYbxi/f800/1737542707.jpeg?s=0ed759d518f6954f73dd5e551645f27abfd70e7e",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/02_00fea_B5TuAoehWqJQTjiYaprjYbxi/310x310/1737542707.jpeg?s=90343c4f43e5a816b046b678097781b0748fb942",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/02_00fea_B5TuAoehWqJQTjiYaprjYbxi/150x150/1737542707.jpeg?s=9308740083b254dcd7e2109b67f4307f27316db6",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/02_00fea_B5TuAoehWqJQTjiYaprjYbxi/100x100/1737542707.jpeg?s=0f49d7144dbcfd6fefa6d76843ce716f36eec530",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/02_00fea_B5TuAoehWqJQTjiYaprjYbxi/50x50/1737542707.jpeg?s=b2380f78326e92b8ed42e84577534b714a5b4e93",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/02_00fea_B5TuAoehWqJQTjiYaprjYbxi/20x20/1737542707.jpeg?s=54b4e22a631f069f28e0bc7705e41603d1bab270",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "02_00fea_B5TuAoehWqJQTjiYaprjYbxi",
+            "timestamp": 1737542707,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/02_00fea_B5TuAoehWqJQTjiYaprjYbxi/1737542707.jpeg?s=aec7777604d3d39e8ea3373df6112f3a9101da52",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995635493-our-legacy-denim-print-jeans",
+      "promoted": false,
+      "photo": {
+        "id": 28469201484,
+        "image_no": 1,
+        "width": 600,
+        "height": 800,
+        "dominant_color": "#979A9A",
+        "dominant_color_opaque": "#E0E1E1",
+        "url": "https://images1.vinted.net/t/03_01b11_utDVV9UaviPEBR1inToWDXt6/f800/1756765632.jpeg?s=ba0133a7a0bc25b785409c16fd46ce2e3176c8c2",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/03_01b11_utDVV9UaviPEBR1inToWDXt6/70x100/1756765632.jpeg?s=73a5ece0b17cc5ed80d1dc96a8bd0978d28d81ff",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/03_01b11_utDVV9UaviPEBR1inToWDXt6/150x210/1756765632.jpeg?s=9c105f4711d967abb522edc1cd6fee8a8c4a7183",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/03_01b11_utDVV9UaviPEBR1inToWDXt6/310x430/1756765632.jpeg?s=81aca6740c48250f3677a6a46aac75c0c59491cc",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/03_01b11_utDVV9UaviPEBR1inToWDXt6/f800/1756765632.jpeg?s=ba0133a7a0bc25b785409c16fd46ce2e3176c8c2",
+            "width": 321,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/03_01b11_utDVV9UaviPEBR1inToWDXt6/f800/1756765632.jpeg?s=ba0133a7a0bc25b785409c16fd46ce2e3176c8c2",
+            "width": 468,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/03_01b11_utDVV9UaviPEBR1inToWDXt6/f800/1756765632.jpeg?s=ba0133a7a0bc25b785409c16fd46ce2e3176c8c2",
+            "width": 273,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "03_01b11_utDVV9UaviPEBR1inToWDXt6",
+          "timestamp": 1756765632,
+          "orientation": 0
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/03_01b11_utDVV9UaviPEBR1inToWDXt6/1756765632.jpeg?s=93dffee5dfce21c8dcb7351b00ce0e9e2fa2f84e",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 7,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "9.45",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "184.45",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "W31 | FR 40",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Our Legacy",
+        "second_line": "W31 | FR 40 · Très bon état",
+        "exposures": [],
+        "accessibility_label": "Our Legacy Denim Print Jeans, marque: Our Legacy, état: Très bon état, taille: W31 | FR 40, 175,00 €, 184,45 € Protection acheteurs incluse",
+        "item_id": 6995635493
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995452382,
+      "title": "Jeans azzurri blu Masc Hi Straight nuovi sample campione",
+      "price": {
+        "amount": "27.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Helmut Lang",
+      "path": "/items/6995452382-jeans-azzurri-blu-masc-hi-straight-nuovi-sample-campione",
+      "user": {
+        "id": 75780721,
+        "login": "stilesoltanto",
+        "profile_url": "https://www.vinted.fr/member/75780721-stilesoltanto",
+        "photo": {
+          "id": 260088758,
+          "width": 533,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb/f800/1756315543.jpeg?s=8f75b36ddd83ee2c081702bc6900767e0aaea06f",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb/310x310/1756315543.jpeg?s=9c404ef8c3ac953d4f1854fbccdf2b7bbad3c5c5",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb/150x150/1756315543.jpeg?s=10e5050d7397a52250d676c1089f834d45dd202a",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb/100x100/1756315543.jpeg?s=8fa6695edf3ee461ae9da7ff8e22d5d09e350cbb",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb/50x50/1756315543.jpeg?s=ae10fa2c8ed0de4bb80a766b1547eb12043040e1",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb/20x20/1756315543.jpeg?s=dd094e7e7a75d822adf002e5db69039761830530",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb",
+            "timestamp": 1756315543,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/03_0061e_CDG8AsxhpwZMZPNRn4pCxGyb/1756315543.jpeg?s=03e3148ff0c726ba20d017390f681343d99e7286",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995452382-jeans-azzurri-blu-masc-hi-straight-nuovi-sample-campione",
+      "promoted": false,
+      "photo": {
+        "id": 28468445919,
+        "image_no": 1,
+        "width": 600,
+        "height": 800,
+        "dominant_color": "#857B70",
+        "dominant_color_opaque": "#DAD7D4",
+        "url": "https://images1.vinted.net/t/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/f800/1756761362.jpeg?s=5edea3e66e2f4cc6d50faa2e7a17c93fca0ca2c0",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/70x100/1756761362.jpeg?s=bf7418d11e943a7187a09723ab30b1ea0be46d73",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/150x210/1756761362.jpeg?s=806551d5dbf709da0fae70a0b5f0791103742b5e",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/310x430/1756761362.jpeg?s=210a1e6ad13df4af3a6b50ed973797a1e92899c4",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/f800/1756761362.jpeg?s=5edea3e66e2f4cc6d50faa2e7a17c93fca0ca2c0",
+            "width": 321,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/f800/1756761362.jpeg?s=5edea3e66e2f4cc6d50faa2e7a17c93fca0ca2c0",
+            "width": 468,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/f800/1756761362.jpeg?s=5edea3e66e2f4cc6d50faa2e7a17c93fca0ca2c0",
+            "width": 273,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx",
+          "timestamp": 1756761362,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/02_005b2_Ak4Uef9DfjVpcbsKSDLYa7Jx/1756761362.jpeg?s=1f622f35ba76d0c0ae6070bfc8476b074d8d5be8",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 0,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "2.05",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "29.05",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "W28 | FR 38",
+      "content_source": "catalog",
+      "status": "Neuf avec étiquette",
+      "item_box": {
+        "first_line": "Helmut Lang",
+        "second_line": "W28 | FR 38 · Neuf avec étiquette",
+        "exposures": [],
+        "accessibility_label": "Jeans azzurri blu Masc Hi Straight nuovi sample campione, marque: Helmut Lang, état: Neuf avec étiquette, taille: W28 | FR 38, 27,00 €, 29,05 € Protection acheteurs incluse",
+        "item_id": 6995452382
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995357858,
+      "title": "Helmut Lang Hemd",
+      "price": {
+        "amount": "120.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Helmut Lang",
+      "path": "/items/6995357858-helmut-lang-hemd",
+      "user": {
+        "id": 150072005,
+        "login": "dnngr",
+        "profile_url": "https://www.vinted.fr/member/150072005-dnngr",
+        "photo": {
+          "id": 151365902,
+          "width": 600,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/f800/1691261322.jpeg?s=661aa458b7c11ce2bad99982146cafa3b55559c7",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/310x310/1691261322.jpeg?s=c5d355480e7cb49d50640d776768c5359ea0f032",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/150x150/1691261322.jpeg?s=b3fddee6f66e80d6ebaa2a41cec3582dd2991c79",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/100x100/1691261322.jpeg?s=427952e698f2c422efcbc2bdaef34e63b6cb1a1d",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/50x50/1691261322.jpeg?s=6fb20dceae6d565738431ec7ebca0b7fbdd5688d",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/20x20/1691261322.jpeg?s=e853f07d5ac13a84551269927451b0c54de5d8a0",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1",
+            "timestamp": 1691261322,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/1691261322.jpeg?s=6280afddfe511ba3bac2df42121e138af772a525",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995357858-helmut-lang-hemd",
+      "promoted": false,
+      "photo": {
+        "id": 28468059731,
+        "image_no": 1,
+        "width": 661,
+        "height": 800,
+        "dominant_color": "#B9B9B3",
+        "dominant_color_opaque": "#EAEAE8",
+        "url": "https://images1.vinted.net/t/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/f800/1756760002.jpeg?s=9a8fcde04f382fa4561445783909d755d503fd1e",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/70x100/1756760002.jpeg?s=7decd58c36721a65f4466dac65eea1da9483b167",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/150x210/1756760002.jpeg?s=65a329c9d490aa169e5fa226f05fc28e4cf4c09b",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/310x430/1756760002.jpeg?s=739a22ca15e49bb974c411ee81c4619956f57684",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/f800/1756760002.jpeg?s=9a8fcde04f382fa4561445783909d755d503fd1e",
+            "width": 353,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/f800/1756760002.jpeg?s=9a8fcde04f382fa4561445783909d755d503fd1e",
+            "width": 515,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/f800/1756760002.jpeg?s=9a8fcde04f382fa4561445783909d755d503fd1e",
+            "width": 300,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm",
+          "timestamp": 1756760002,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/04_007b4_rZ2qMYfz1BwuZrNtPRxTEACm/1756760002.jpeg?s=c95a082ade84134b70369c17186ee58d1c807e93",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 0,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "6.7",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "126.7",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "M",
+      "content_source": "catalog",
+      "status": "Bon état",
+      "item_box": {
+        "first_line": "Helmut Lang",
+        "second_line": "M · Bon état",
+        "exposures": [],
+        "accessibility_label": "Helmut Lang Hemd, marque: Helmut Lang, état: Bon état, taille: M, 120,00 €, 126,70 € Protection acheteurs incluse",
+        "item_id": 6995357858
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995345718,
+      "title": "Helmut Lang Jacke",
+      "price": {
+        "amount": "215.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Helmut Lang",
+      "path": "/items/6995345718-helmut-lang-jacke",
+      "user": {
+        "id": 150072005,
+        "login": "dnngr",
+        "profile_url": "https://www.vinted.fr/member/150072005-dnngr",
+        "photo": {
+          "id": 151365902,
+          "width": 600,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/f800/1691261322.jpeg?s=661aa458b7c11ce2bad99982146cafa3b55559c7",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/310x310/1691261322.jpeg?s=c5d355480e7cb49d50640d776768c5359ea0f032",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/150x150/1691261322.jpeg?s=b3fddee6f66e80d6ebaa2a41cec3582dd2991c79",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/100x100/1691261322.jpeg?s=427952e698f2c422efcbc2bdaef34e63b6cb1a1d",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/50x50/1691261322.jpeg?s=6fb20dceae6d565738431ec7ebca0b7fbdd5688d",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/20x20/1691261322.jpeg?s=e853f07d5ac13a84551269927451b0c54de5d8a0",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1",
+            "timestamp": 1691261322,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/01_00a1d_5YDm8EEMtXTnLQLPADrN8ji1/1691261322.jpeg?s=6280afddfe511ba3bac2df42121e138af772a525",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995345718-helmut-lang-jacke",
+      "promoted": false,
+      "photo": {
+        "id": 28468009825,
+        "image_no": 1,
+        "width": 543,
+        "height": 800,
+        "dominant_color": "#232423",
+        "dominant_color_opaque": "#BDBDBD",
+        "url": "https://images1.vinted.net/t/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/f800/1756759842.jpeg?s=eb4a36bbbe3ae698e64545479659a6e7cdfa67a2",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/70x100/1756759842.jpeg?s=cd59c1d7d44cd3cce64d590909c499c406924a25",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/150x210/1756759842.jpeg?s=fd7be33b677ede116c2a94655718c7e838bb2982",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/310x430/1756759842.jpeg?s=72e3762e367c0169573122e5fac39e572d5887e5",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/f800/1756759842.jpeg?s=eb4a36bbbe3ae698e64545479659a6e7cdfa67a2",
+            "width": 290,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/f800/1756759842.jpeg?s=eb4a36bbbe3ae698e64545479659a6e7cdfa67a2",
+            "width": 423,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/f800/1756759842.jpeg?s=eb4a36bbbe3ae698e64545479659a6e7cdfa67a2",
+            "width": 247,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "02_005ec_1YyrzHav2Y52BfYEXdmFb82B",
+          "timestamp": 1756759842,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/02_005ec_1YyrzHav2Y52BfYEXdmFb82B/1756759842.jpeg?s=79622a4e8b3bd7f66f3dba3ee2e304c11b45ad48",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 0,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "11.45",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "226.45",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "XL",
+      "content_source": "catalog",
+      "status": "Neuf sans étiquette",
+      "item_box": {
+        "first_line": "Helmut Lang",
+        "second_line": "XL · Neuf sans étiquette",
+        "exposures": [],
+        "accessibility_label": "Helmut Lang Jacke, marque: Helmut Lang, état: Neuf sans étiquette, taille: XL, 215,00 €, 226,45 € Protection acheteurs incluse",
+        "item_id": 6995345718
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995232734,
+      "title": "Our Legacy Third Cut Jeans",
+      "price": {
+        "amount": "180.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Our Legacy",
+      "path": "/items/6995232734-our-legacy-third-cut-jeans",
+      "user": {
+        "id": 256348650,
+        "login": "thrifts.pt",
+        "profile_url": "https://www.vinted.fr/member/256348650-thriftspt",
+        "photo": {
+          "id": 231434149,
+          "width": 613,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/04_01cca_MN8qayS6nqtzeV3V1krVnns2/f800/1740100180.jpeg?s=b301033037f1d97128bb432f8ba7189b49a3a5d9",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/04_01cca_MN8qayS6nqtzeV3V1krVnns2/310x310/1740100180.jpeg?s=28f787d27fdbcfb1b3bcd1a8824a8371d41fed19",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/04_01cca_MN8qayS6nqtzeV3V1krVnns2/150x150/1740100180.jpeg?s=2a424c8b495ae4a2d2f2249dc3f3f840a510e419",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/04_01cca_MN8qayS6nqtzeV3V1krVnns2/100x100/1740100180.jpeg?s=538f25d641c47a98aa62339abff8eabe42c3ece3",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/04_01cca_MN8qayS6nqtzeV3V1krVnns2/50x50/1740100180.jpeg?s=82f17089033cda221dbaefe6d501d72f3ff505e3",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/04_01cca_MN8qayS6nqtzeV3V1krVnns2/20x20/1740100180.jpeg?s=4a36cc00ce1c707aef264c50bf10e91da0bd37b5",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "04_01cca_MN8qayS6nqtzeV3V1krVnns2",
+            "timestamp": 1740100180,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/04_01cca_MN8qayS6nqtzeV3V1krVnns2/1740100180.jpeg?s=4f409b383e7c68e6a1279d682156b48e0dd5dcff",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995232734-our-legacy-third-cut-jeans",
+      "promoted": false,
+      "photo": {
+        "id": 28467548109,
+        "image_no": 1,
+        "width": 600,
+        "height": 800,
+        "dominant_color": "#889197",
+        "dominant_color_opaque": "#DBDEE0",
+        "url": "https://images1.vinted.net/t/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/f800/1756758515.jpeg?s=aa5fe8464fabd64e57f5adc92b9d910bff15152c",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/70x100/1756758515.jpeg?s=01e99961ac6b2f380820735c7a08986cb769bc2d",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/150x210/1756758515.jpeg?s=b03f344899e7a506550dd12c331e71d3204a3296",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/310x430/1756758515.jpeg?s=8ce56d3f642b43cd3f2c127ebf5f0c719adfe5b9",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/f800/1756758515.jpeg?s=aa5fe8464fabd64e57f5adc92b9d910bff15152c",
+            "width": 321,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/f800/1756758515.jpeg?s=aa5fe8464fabd64e57f5adc92b9d910bff15152c",
+            "width": 468,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/f800/1756758515.jpeg?s=aa5fe8464fabd64e57f5adc92b9d910bff15152c",
+            "width": 273,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "02_00e7f_PEbvKuquyWfXQa6DecA5N9q9",
+          "timestamp": 1756758515,
+          "orientation": 0
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/02_00e7f_PEbvKuquyWfXQa6DecA5N9q9/1756758515.jpeg?s=60f3b29e3acff1416f6bf4ccb3be003bf3e0a67a",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 14,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "9.7",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "189.7",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "W30 | FR 40",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Our Legacy",
+        "second_line": "W30 | FR 40 · Très bon état",
+        "exposures": [],
+        "accessibility_label": "Our Legacy Third Cut Jeans, marque: Our Legacy, état: Très bon état, taille: W30 | FR 40, 180,00 €, 189,70 € Protection acheteurs incluse",
+        "item_id": 6995232734
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995135975,
+      "title": "FW98 Helmut Lang Painter Denim",
+      "price": {
+        "amount": "350.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Helmut Lang",
+      "path": "/items/6995135975-fw98-helmut-lang-painter-denim",
+      "user": {
+        "id": 68005910,
+        "login": "robin23071969",
+        "profile_url": "https://www.vinted.fr/member/68005910-robin23071969",
+        "photo": {
+          "id": 197027279,
+          "width": 800,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/03_0082d_zbdcmDKMua3AymwkRWwpAVSn/f800/1718704032.jpeg?s=50b0fd21b91675c82063c17c9055425bfa79d583",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/03_0082d_zbdcmDKMua3AymwkRWwpAVSn/310x310/1718704032.jpeg?s=6e9c3a00d465d9f4921eaf10130fd10ea21116b6",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/03_0082d_zbdcmDKMua3AymwkRWwpAVSn/150x150/1718704032.jpeg?s=9a28df65d5ab4151b0c763e9969b77280207eb8c",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/03_0082d_zbdcmDKMua3AymwkRWwpAVSn/100x100/1718704032.jpeg?s=4697c29f38a6c9950bf2459c10065ac7d8366e6a",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/03_0082d_zbdcmDKMua3AymwkRWwpAVSn/50x50/1718704032.jpeg?s=7d402b2d0fbed5bd6b1da0aa22735ed936cee2f6",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/03_0082d_zbdcmDKMua3AymwkRWwpAVSn/20x20/1718704032.jpeg?s=fa76ff0789436ebd5f4934ba2b6d24ba7e7d124e",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "03_0082d_zbdcmDKMua3AymwkRWwpAVSn",
+            "timestamp": 1718704032,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/03_0082d_zbdcmDKMua3AymwkRWwpAVSn/1718704032.jpeg?s=557a1c5a9c0f57e511dce11beebaf16b417e9a3f",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995135975-fw98-helmut-lang-painter-denim",
+      "promoted": false,
+      "photo": {
+        "id": 28467151006,
+        "image_no": 1,
+        "width": 470,
+        "height": 800,
+        "dominant_color": "#767874",
+        "dominant_color_opaque": "#D6D7D5",
+        "url": "https://images1.vinted.net/t/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/f800/1756757532.jpeg?s=1c222552aa6bb60f1f9d3df6723c808d71a448cd",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/70x100/1756757532.jpeg?s=1aa6db84846cda5502bc16a63f7715bfadfdc928",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/150x210/1756757532.jpeg?s=b511e0dba43bf41384cc1c6562ff3adb6c2c6418",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/310x430/1756757532.jpeg?s=8ee1d8f8a7d38e5e0c92b063df09c2e4c914ba08",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/f800/1756757532.jpeg?s=1c222552aa6bb60f1f9d3df6723c808d71a448cd",
+            "width": 251,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/f800/1756757532.jpeg?s=1c222552aa6bb60f1f9d3df6723c808d71a448cd",
+            "width": 366,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/f800/1756757532.jpeg?s=1c222552aa6bb60f1f9d3df6723c808d71a448cd",
+            "width": 213,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT",
+          "timestamp": 1756757532,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/04_018c1_SQfJ8ULgqCNAhTGEP6Knx4CT/1756757532.jpeg?s=0777d7c6102ef0bb26903b9fdd138e8e43d51d91",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 2,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "18.2",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "368.2",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "S",
+      "content_source": "catalog",
+      "status": "Bon état",
+      "item_box": {
+        "first_line": "Helmut Lang",
+        "second_line": "S · Bon état",
+        "exposures": [],
+        "accessibility_label": "FW98 Helmut Lang Painter Denim, marque: Helmut Lang, état: Bon état, taille: S, 350,00 €, 368,20 € Protection acheteurs incluse",
+        "item_id": 6995135975
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995084070,
+      "title": "Helmut Lang Vintage  street bag excellent pour les photographes",
+      "price": {
+        "amount": "240.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Helmut Lang",
+      "path": "/items/6995084070-helmut-lang-vintage-street-bag-excellent-pour-les-photographes",
+      "user": {
+        "id": 68993852,
+        "login": "josephkaradeniz",
+        "profile_url": "https://www.vinted.fr/member/68993852-josephkaradeniz",
+        "photo": {
+          "id": 67404856,
+          "width": 597,
+          "height": 395,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW/f800/1631991063.jpeg?s=08c2b57993b3bdad30ecd603de077f3b27e3f939",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW/310x310/1631991063.jpeg?s=5fc24ff07d52be8edd63119ff3d0b6d0d07581c1",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW/150x150/1631991063.jpeg?s=b6e74ca1e18f615077eee6cea8dc689dd04aca9e",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW/100x100/1631991063.jpeg?s=4facd93a8816fb2439130ffda526077ac9469d53",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW/50x50/1631991063.jpeg?s=2c6e80c167f48774123031b2aa310765f73d3696",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW/20x20/1631991063.jpeg?s=3b016005ef8adeb951e8c77716dad63f001dab04",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW",
+            "timestamp": 1631991063,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/02_00c08_GfBrcU3cGJKRxBDx9QKq8ZVW/1631991063.jpeg?s=d216dd5318c0a08ce87d013f0493287ee458b5b8",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995084070-helmut-lang-vintage-street-bag-excellent-pour-les-photographes",
+      "promoted": false,
+      "photo": {
+        "id": 28466937422,
+        "image_no": 1,
+        "width": 800,
+        "height": 781,
+        "dominant_color": "#99723B",
+        "dominant_color_opaque": "#E0D5C4",
+        "url": "https://images1.vinted.net/t/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/f800/1756757043.jpeg?s=2ce1b0d1f00b2bfe3c52f1c2118bcce34435c1ff",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/70x100/1756757043.jpeg?s=fb46970ceb10ed3d98c7d92ee10adf058a4b41fc",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/150x210/1756757043.jpeg?s=684ea28d4f21032b76adcee7d1588fabcf2d3e19",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/310x430/1756757043.jpeg?s=46eb3ee13e67b11c87a81847e731622c3be66549",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/f800/1756757043.jpeg?s=2ce1b0d1f00b2bfe3c52f1c2118bcce34435c1ff",
+            "width": 428,
+            "height": 418,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/f800/1756757043.jpeg?s=2ce1b0d1f00b2bfe3c52f1c2118bcce34435c1ff",
+            "width": 624,
+            "height": 609,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/f800/1756757043.jpeg?s=2ce1b0d1f00b2bfe3c52f1c2118bcce34435c1ff",
+            "width": 364,
+            "height": 355,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "03_0250b_KZxWFhCWAv4Hbta5r3DohMjw",
+          "timestamp": 1756757043,
+          "orientation": 0
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/03_0250b_KZxWFhCWAv4Hbta5r3DohMjw/1756757043.jpeg?s=e518487e787e1323729ce86c3d54b42f7560c3b3",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 6,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "12.7",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "252.7",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Helmut Lang",
+        "second_line": "Très bon état",
+        "exposures": [],
+        "accessibility_label": "Helmut Lang Vintage  street bag excellent pour les photographes, marque: Helmut Lang, état: Très bon état, 240,00 €, 252,70 € Protection acheteurs incluse",
+        "item_id": 6995084070
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995056950,
+      "title": "Pantalon straight fit third cut our legacy us 31 pink cast",
+      "price": {
+        "amount": "120.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Our Legacy",
+      "path": "/items/6995056950-pantalon-straight-fit-third-cut-our-legacy-us-31-pink-cast",
+      "user": {
+        "id": 156754802,
+        "login": "christiangrsl",
+        "profile_url": "https://www.vinted.fr/member/156754802-christiangrsl",
+        "photo": {
+          "id": 219718672,
+          "width": 600,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ/f800/1732485082.jpeg?s=e9a20ec054d9c4ed301d709783cabf214d361a33",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ/310x310/1732485082.jpeg?s=9795116a086d534fdc41b7c07bcf5330976f08de",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ/150x150/1732485082.jpeg?s=8508d2c0c0c8fb9421262e0879527844dede162b",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ/100x100/1732485082.jpeg?s=2bb3b6a5a63609c41473b205b24299694df60573",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ/50x50/1732485082.jpeg?s=8b28315fb645633fb949fad14664c935fde407fe",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ/20x20/1732485082.jpeg?s=e104f65961b4c6c0455ed2d7ce7af79f7be27699",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ",
+            "timestamp": 1732485082,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/04_0270d_nNLdXRKm2aoBiVAFPmwCgpeQ/1732485082.jpeg?s=0ee300b430c787a13bfccba9a1cdbd543eeb5979",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995056950-pantalon-straight-fit-third-cut-our-legacy-us-31-pink-cast",
+      "promoted": false,
+      "photo": {
+        "id": 28466827318,
+        "image_no": 1,
+        "width": 600,
+        "height": 800,
+        "dominant_color": "#847B6F",
+        "dominant_color_opaque": "#DAD7D4",
+        "url": "https://images1.vinted.net/t/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/f800/1756756791.jpeg?s=8da3131cf15be4e56d7094be39519e4307bb8e1d",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/70x100/1756756791.jpeg?s=4ed8674e7050524d27ed950f3567eea1bac5c091",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/150x210/1756756791.jpeg?s=012854ba974159957ed8875f5c585efdc7330c34",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/310x430/1756756791.jpeg?s=df192f3ab8705784adac224517fb28aec9f9faa2",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/f800/1756756791.jpeg?s=8da3131cf15be4e56d7094be39519e4307bb8e1d",
+            "width": 321,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/f800/1756756791.jpeg?s=8da3131cf15be4e56d7094be39519e4307bb8e1d",
+            "width": 468,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/f800/1756756791.jpeg?s=8da3131cf15be4e56d7094be39519e4307bb8e1d",
+            "width": 273,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y",
+          "timestamp": 1756756791,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/04_00ab3_ubTqoMhTJSW8dku4hFVwhr7Y/1756756791.jpeg?s=3cda384cdaf18f8c11f86e48cefcddc03711af66",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 9,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "6.7",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "126.7",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "W31 | FR 40",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Our Legacy",
+        "second_line": "W31 | FR 40 · Très bon état",
+        "exposures": [],
+        "accessibility_label": "Pantalon straight fit third cut our legacy us 31 pink cast, marque: Our Legacy, état: Très bon état, taille: W31 | FR 40, 120,00 €, 126,70 € Protection acheteurs incluse",
+        "item_id": 6995056950
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6995019011,
+      "title": "Helmut Lang Trucker Denim Jacket, Washed black, size M",
+      "price": {
+        "amount": "199.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Helmut Lang",
+      "path": "/items/6995019011-helmut-lang-trucker-denim-jacket-washed-black-size-m",
+      "user": {
+        "id": 68857497,
+        "login": "an.tonno",
+        "profile_url": "https://www.vinted.fr/member/68857497-antonno",
+        "photo": {
+          "id": 209498641,
+          "width": 191,
+          "height": 264,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/02_02255_yrQdRwsh8aZefA7R2RfsPm4S/f800/1726849937.jpeg?s=bb3dc865ab0d27c312612e35203d27955340b8af",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/02_02255_yrQdRwsh8aZefA7R2RfsPm4S/310x310/1726849937.jpeg?s=514c41121df3540ca0bc1a083bf6729082d09c15",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/02_02255_yrQdRwsh8aZefA7R2RfsPm4S/150x150/1726849937.jpeg?s=0d166c0a69c28f9372a3309f3f584022156dac03",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/02_02255_yrQdRwsh8aZefA7R2RfsPm4S/100x100/1726849937.jpeg?s=23ac8a02a88c3a177e5ab4d075a69c76067e2cac",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/02_02255_yrQdRwsh8aZefA7R2RfsPm4S/50x50/1726849937.jpeg?s=10366b51b2a19d18e34b6f5d3a7ae1b9a13c0988",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/02_02255_yrQdRwsh8aZefA7R2RfsPm4S/20x20/1726849937.jpeg?s=3751a028e28d44689e9bbc3d5c93890097ebc369",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "02_02255_yrQdRwsh8aZefA7R2RfsPm4S",
+            "timestamp": 1726849937,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/02_02255_yrQdRwsh8aZefA7R2RfsPm4S/1726849937.jpeg?s=b6a1b724b8f6943bd383227db0256ab5d3c3ed15",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6995019011-helmut-lang-trucker-denim-jacket-washed-black-size-m",
+      "promoted": false,
+      "photo": {
+        "id": 28466670903,
+        "image_no": 1,
+        "width": 602,
+        "height": 800,
+        "dominant_color": "#656565",
+        "dominant_color_opaque": "#D1D1D1",
+        "url": "https://images1.vinted.net/t/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/f800/1756756449.jpeg?s=908f7d6681f919c9354ad13eaed8af3da477c438",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/70x100/1756756449.jpeg?s=f11e76f39f16cf75ac7867783918164a1aaa5f4a",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/150x210/1756756449.jpeg?s=f104ef3786d683dee4fafafe56156b531163c273",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/310x430/1756756449.jpeg?s=91e91923e16caf92586a341c4c8605d7e2e474ac",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/f800/1756756449.jpeg?s=908f7d6681f919c9354ad13eaed8af3da477c438",
+            "width": 322,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/f800/1756756449.jpeg?s=908f7d6681f919c9354ad13eaed8af3da477c438",
+            "width": 469,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/f800/1756756449.jpeg?s=908f7d6681f919c9354ad13eaed8af3da477c438",
+            "width": 273,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "01_01279_kyAC3qtUYwG5AVkRk6HDArZT",
+          "timestamp": 1756756449,
+          "orientation": 0
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/01_01279_kyAC3qtUYwG5AVkRk6HDArZT/1756756449.jpeg?s=b6fb53d4e6ded7c500a27356af08579039d4c0ec",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 3,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "10.65",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "209.65",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "M",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Helmut Lang",
+        "second_line": "M · Très bon état",
+        "exposures": [],
+        "accessibility_label": "Helmut Lang Trucker Denim Jacket, Washed black, size M, marque: Helmut Lang, état: Très bon état, taille: M, 199,00 €, 209,65 € Protection acheteurs incluse",
+        "item_id": 6995019011
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6994976508,
+      "title": "Cintura pelle our legacy",
+      "price": {
+        "amount": "60.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Our Legacy",
+      "path": "/items/6994976508-cintura-pelle-our-legacy",
+      "user": {
+        "id": 50927753,
+        "login": "lrpedrini",
+        "profile_url": "https://www.vinted.fr/member/50927753-lrpedrini",
+        "photo": {
+          "id": 117581598,
+          "width": 600,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/01_022fc_g4nVxChv4Q2rKtcBzac76FFi/f800/1669022128.jpeg?s=8a72ad4d7bb22a1cf82d81976bbf928809a425bb",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/01_022fc_g4nVxChv4Q2rKtcBzac76FFi/310x310/1669022128.jpeg?s=4db5f0e4cb278360b35997588ed6156bef4170a1",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/01_022fc_g4nVxChv4Q2rKtcBzac76FFi/150x150/1669022128.jpeg?s=70935a29040e02c4a07d35b2ed08352f0e6a12fa",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/01_022fc_g4nVxChv4Q2rKtcBzac76FFi/100x100/1669022128.jpeg?s=d802a2807cec80e40bcca770c96ba12a0349ff86",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/01_022fc_g4nVxChv4Q2rKtcBzac76FFi/50x50/1669022128.jpeg?s=600659d7131aedae10f7ec4088001afec4e4aed9",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/01_022fc_g4nVxChv4Q2rKtcBzac76FFi/20x20/1669022128.jpeg?s=24a4c665b3b256e4a38a30cc84201e4c0f80c2e1",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "01_022fc_g4nVxChv4Q2rKtcBzac76FFi",
+            "timestamp": 1669022128,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/01_022fc_g4nVxChv4Q2rKtcBzac76FFi/1669022128.jpeg?s=8be071fb7a98e90380d4bd1a66bab050cea99530",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6994976508-cintura-pelle-our-legacy",
+      "promoted": false,
+      "photo": {
+        "id": 28466498519,
+        "image_no": 1,
+        "width": 800,
+        "height": 600,
+        "dominant_color": "#605C56",
+        "dominant_color_opaque": "#CFCECC",
+        "url": "https://images1.vinted.net/t/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/f800/1756756080.jpeg?s=f66175b5950eb6a4368c37e12157b6db56af01cd",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/70x100/1756756080.jpeg?s=7241e8ae988a3a3ba76f3099af04d53b0bf83a17",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/150x210/1756756080.jpeg?s=adc0e128929e8e4e11982410428ace1260b7c7cf",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/310x430/1756756080.jpeg?s=54d1fd8077d0dae2bcff63ebebdc2ec9ae4beb0f",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/f800/1756756080.jpeg?s=f66175b5950eb6a4368c37e12157b6db56af01cd",
+            "width": 428,
+            "height": 321,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/f800/1756756080.jpeg?s=f66175b5950eb6a4368c37e12157b6db56af01cd",
+            "width": 624,
+            "height": 468,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/f800/1756756080.jpeg?s=f66175b5950eb6a4368c37e12157b6db56af01cd",
+            "width": 364,
+            "height": 273,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "04_012fb_WDq2pzbe7R9YrRM11GywE1Ss",
+          "timestamp": 1756756080,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/04_012fb_WDq2pzbe7R9YrRM11GywE1Ss/1756756080.jpeg?s=670a8e735a8742719882da0318304caa8c624b15",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 16,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "3.7",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "63.7",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "70 cm",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Our Legacy",
+        "second_line": "70 cm · Très bon état",
+        "exposures": [],
+        "accessibility_label": "Cintura pelle our legacy, marque: Our Legacy, état: Très bon état, taille: 70 cm, 60,00 €, 63,70 € Protection acheteurs incluse",
+        "item_id": 6994976508
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6994565642,
+      "title": "Helmut Lang 1999 Jeansjacke Grau",
+      "price": {
+        "amount": "175.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Helmut Lang",
+      "path": "/items/6994565642-helmut-lang-1999-jeansjacke-grau",
+      "user": {
+        "id": 164036636,
+        "login": "konkas",
+        "profile_url": "https://www.vinted.fr/member/164036636-konkas",
+        "photo": {
+          "id": 244610528,
+          "width": 800,
+          "height": 450,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5/f800/1747493723.jpeg?s=99f4ff48a7590211e82206551067cc32817dfebe",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5/310x310/1747493723.jpeg?s=9c7f146bc3ba150c63c29b7257baf04ba83e5648",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5/150x150/1747493723.jpeg?s=68c534faa53499be7ecd98ad8b547bf48a04d405",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5/100x100/1747493723.jpeg?s=034301681ba0b877dc9263725c6a5174bde75e9f",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5/50x50/1747493723.jpeg?s=cdbd02815a2899af20d0e7025aeb0c8759743c8e",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5/20x20/1747493723.jpeg?s=a0b130b4837134620d157b99d2707145697f540f",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5",
+            "timestamp": 1747493723,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/01_000d3_YTdgTPo5c6SZY8BGLaAuQdY5/1747493723.jpeg?s=63322efa69993943dc16bb653847d237a950db17",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6994565642-helmut-lang-1999-jeansjacke-grau",
+      "promoted": false,
+      "photo": {
+        "id": 28464827684,
+        "image_no": 1,
+        "width": 600,
+        "height": 800,
+        "dominant_color": "#6D7176",
+        "dominant_color_opaque": "#D3D4D6",
+        "url": "https://images1.vinted.net/t/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/f800/1756752805.jpeg?s=86f55bce83fec15162680a2a3197244478ad4e2f",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/70x100/1756752805.jpeg?s=158906418a0666e90065dd566f722d6b6e12c973",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/150x210/1756752805.jpeg?s=72b9a4ab3551c453ea8e2841685e1cf096916084",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/310x430/1756752805.jpeg?s=a61f6bce3849a4511a7a8ca4ed3f0c56fbea97f2",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/f800/1756752805.jpeg?s=86f55bce83fec15162680a2a3197244478ad4e2f",
+            "width": 321,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/f800/1756752805.jpeg?s=86f55bce83fec15162680a2a3197244478ad4e2f",
+            "width": 468,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/f800/1756752805.jpeg?s=86f55bce83fec15162680a2a3197244478ad4e2f",
+            "width": 273,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "04_0056a_6FnUpzRzRGQyYK1wNMKndCjt",
+          "timestamp": 1756752805,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/04_0056a_6FnUpzRzRGQyYK1wNMKndCjt/1756752805.jpeg?s=4479d22bf399729a0e8abf96bc74536fffe009ea",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 9,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "9.45",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "184.45",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "L",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Helmut Lang",
+        "second_line": "L · Très bon état",
+        "exposures": [],
+        "accessibility_label": "Helmut Lang 1999 Jeansjacke Grau, marque: Helmut Lang, état: Très bon état, taille: L, 175,00 €, 184,45 € Protection acheteurs incluse",
+        "item_id": 6994565642
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    },
+    {
+      "id": 6994546544,
+      "title": "Our Legacy Coco Shirt",
+      "price": {
+        "amount": "135.0",
+        "currency_code": "EUR"
+      },
+      "is_visible": true,
+      "brand_title": "Our Legacy",
+      "path": "/items/6994546544-our-legacy-coco-shirt",
+      "user": {
+        "id": 43568508,
+        "login": "tomek.pwnd",
+        "profile_url": "https://www.vinted.fr/member/43568508-tomekpwnd",
+        "photo": {
+          "id": 157659202,
+          "width": 600,
+          "height": 800,
+          "temp_uuid": null,
+          "url": "https://images1.vinted.net/t/03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4/f800/1694981268.jpeg?s=3a13984af0615270375f061cfd7163365cd800dc",
+          "dominant_color": "#31abc2",
+          "dominant_color_opaque": "#C1E6ED",
+          "thumbnails": [
+            {
+              "type": "thumb310",
+              "url": "https://images1.vinted.net/t/03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4/310x310/1694981268.jpeg?s=d1dc01b7b1ce4c190ef7003f7789e66d2420190c",
+              "width": 310,
+              "height": 310,
+              "original_size": null
+            },
+            {
+              "type": "thumb150",
+              "url": "https://images1.vinted.net/t/03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4/150x150/1694981268.jpeg?s=aee1736ce2470630c1bd29ab1aadc0dcf280809c",
+              "width": 150,
+              "height": 150,
+              "original_size": null
+            },
+            {
+              "type": "thumb100",
+              "url": "https://images1.vinted.net/t/03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4/100x100/1694981268.jpeg?s=54325dc2c1319d8ca6aa28a2eb5235d460b7db9d",
+              "width": 100,
+              "height": 100,
+              "original_size": null
+            },
+            {
+              "type": "thumb50",
+              "url": "https://images1.vinted.net/t/03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4/50x50/1694981268.jpeg?s=63c3916598fef645d9d85ece9d7acff4b466190c",
+              "width": 50,
+              "height": 50,
+              "original_size": null
+            },
+            {
+              "type": "thumb20",
+              "url": "https://images1.vinted.net/t/03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4/20x20/1694981268.jpeg?s=7090e2acc5e5e3639381b9a3b37cdc0cd7b149d3",
+              "width": 20,
+              "height": 20,
+              "original_size": null
+            }
+          ],
+          "is_suspicious": false,
+          "orientation": null,
+          "high_resolution": {
+            "id": "03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4",
+            "timestamp": 1694981268,
+            "orientation": null
+          },
+          "full_size_url": "https://images1.vinted.net/tc/03_00c04_RxXZe9ThvKTSJNF5EYvjEQG4/1694981268.jpeg?s=4b7164b8334df844d096b623d777fc7719aa18fb",
+          "is_hidden": false,
+          "extra": {}
+        },
+        "business": false
+      },
+      "conversion": null,
+      "url": "https://www.vinted.fr/items/6994546544-our-legacy-coco-shirt",
+      "promoted": false,
+      "photo": {
+        "id": 28464749586,
+        "image_no": 1,
+        "width": 450,
+        "height": 800,
+        "dominant_color": "#31303A",
+        "dominant_color_opaque": "#C1C1C4",
+        "url": "https://images1.vinted.net/t/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/f800/1756752661.jpeg?s=bf175c79dd590ad65db1caa1a23780e4e5616d75",
+        "is_main": true,
+        "thumbnails": [
+          {
+            "type": "thumb70x100",
+            "url": "https://images1.vinted.net/t/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/70x100/1756752661.jpeg?s=58482ecaf431825686ec3940fedfef7a87a58a62",
+            "width": 70,
+            "height": 100,
+            "original_size": null
+          },
+          {
+            "type": "thumb150x210",
+            "url": "https://images1.vinted.net/t/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/150x210/1756752661.jpeg?s=f24c4c0dfaf41c422935489dca1376d4f7251f56",
+            "width": 150,
+            "height": 210,
+            "original_size": null
+          },
+          {
+            "type": "thumb310x430",
+            "url": "https://images1.vinted.net/t/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/310x430/1756752661.jpeg?s=f477cd44ac3bc337ca5570d94553503f2ce42230",
+            "width": 310,
+            "height": 430,
+            "original_size": null
+          },
+          {
+            "type": "thumb428x624",
+            "url": "https://images1.vinted.net/t/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/f800/1756752661.jpeg?s=bf175c79dd590ad65db1caa1a23780e4e5616d75",
+            "width": 240,
+            "height": 428,
+            "original_size": true
+          },
+          {
+            "type": "thumb624x428",
+            "url": "https://images1.vinted.net/t/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/f800/1756752661.jpeg?s=bf175c79dd590ad65db1caa1a23780e4e5616d75",
+            "width": 351,
+            "height": 624,
+            "original_size": true
+          },
+          {
+            "type": "thumb364x428",
+            "url": "https://images1.vinted.net/t/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/f800/1756752661.jpeg?s=bf175c79dd590ad65db1caa1a23780e4e5616d75",
+            "width": 204,
+            "height": 364,
+            "original_size": true
+          }
+        ],
+        "high_resolution": {
+          "id": "01_01e9f_BawuPAqu5Qutz7Enz8xXfcug",
+          "timestamp": 1756752661,
+          "orientation": null
+        },
+        "is_suspicious": false,
+        "full_size_url": "https://images1.vinted.net/tc/01_01e9f_BawuPAqu5Qutz7Enz8xXfcug/1756752661.jpeg?s=026a834e69a09f2c4841445586ff5adff9f2fdbc",
+        "is_hidden": false,
+        "extra": {}
+      },
+      "favourite_count": 9,
+      "is_favourite": false,
+      "service_fee": {
+        "amount": "7.45",
+        "currency_code": "EUR"
+      },
+      "total_item_price": {
+        "amount": "142.45",
+        "currency_code": "EUR"
+      },
+      "view_count": 0,
+      "size_title": "S",
+      "content_source": "catalog",
+      "status": "Très bon état",
+      "item_box": {
+        "first_line": "Our Legacy",
+        "second_line": "S · Très bon état",
+        "exposures": [],
+        "accessibility_label": "Our Legacy Coco Shirt, marque: Our Legacy, état: Très bon état, taille: S, 135,00 €, 142,45 € Protection acheteurs incluse",
+        "item_id": 6994546544
+      },
+      "search_tracking_params": {
+        "score": null,
+        "matched_queries": []
+      }
+    }
+  ],
+  "search_tracking_params": {
+    "search_correlation_id": "f96a860d-9d26-4a90-b329-7b5719132eed",
+    "global_catalog_browse_session_id": "9b42c401-f51e-4976-8a03-a24e2ac8ca8e",
+    "search_session_id": "0a7a7b68-5cc6-4374-8c74-71b077223a56"
+  },
+  "pagination": {
+    "current_page": 1,
+    "total_pages": 80,
+    "total_entries": 960,
+    "per_page": 12,
+    "time": 1756775654
+  },
+  "code": 0
+}
