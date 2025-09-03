@@ -51,31 +51,6 @@ class Filter:
         else:
             return
 
-    # @classmethod
-    # def get_filter(cls, name, id):
-    #     filters = cls.filters(id)
-    #     for f in filters:
-    #         if f.name == name:
-    #             return f
-    #     print("[INFO] pas de filtre à ce nom ...")
-    #     return None
-
-    # @classmethod
-    # def del_filter(cls, name, id, couch=couch):
-    #     filter = couch["filters"].view(
-    #         "filter/filter_by_user_and_name", key=[id, name], include_docs=True
-    #     )
-
-    #     if filter:
-    #         print("[INFO] filtre va être delete ...")
-    #         for row in filter:
-    #             doc = row.doc
-    #             couch["filters"].delete(doc)
-    #     else:
-    #         print("[INFO] delete un filtre qui n'existe pas ...")
-    #
-    #
-
     def to_pydantic(self):
         # model to pydantic
         return FilterModel(
@@ -139,9 +114,7 @@ class Filter:
                 return
 
         except couchdb.http.ResourceConflict:
-            print(
-                f"[ERROR] Conflit détecté lors de la sauvegarde du filtre pour user {self.id}"
-            )
+            print(f"[ERROR] conflict for user: {self.id}")
 
     def transform(self, page, item):
         # url accessing the API of v by transforming an actual url
@@ -164,7 +137,7 @@ class Filter:
             query_params_clean["catalog_ids"] = query_params_clean.pop("catalog")
             query_params_clean.pop("disabled_personalization", None)
 
-            # Fusionner les valeurs identiques avec des virgules
+            # merge identic data separate by comma
             query_params_clean = {k: ",".join(v) for k, v in query_params_clean.items()}
 
             query_params_clean = {"per_page": str(item), **query_params_clean}
@@ -178,9 +151,12 @@ class Filter:
         return url_API
 
     def feed(self, page=1, item=6):
+        # the less items you scrap, the less data you consume, sounds cheap but
+        # if you pay an IP provider/GB, it makes sense
         return self.transform(page, item)
 
     def browse(self, page, item=96):
+        # all the items you can scrap from an json's API
         return self.transform(page, item)
 
 
@@ -206,100 +182,3 @@ check = Filter(id=user_id)
 # print(list(check.filter.values()))
 to_scrap = check.browse(page=1)
 print(to_scrap)
-# da = check.browse(page=1)
-# print(da)
-# for i, j in zip(name, many):
-#     check.add_url(i, j)
-
-# print(check.filter)
-
-# check.save_filter()
-
-dada = Filter.get_filter(user_id, couch["users_filter"])
-# dada = couch["users_filter"].get(str(user_id))["filter"]
-
-# print(dada)
-# pourvoir = Filter.get_filter("frenchcoco", id)
-# mama = pourvoir.urls
-# print(pourvoir.browse(page=1))
-
-
-# mama = Filter.get_filter(id=id, name="jaime")
-# print(mama.to_feed())
-
-
-# mama = Filter()
-# for i in abroad:
-#     mama.add_url(i)
-
-# print(mama.to_feed())
-# mama.name = "jeez"
-# mama.save_filter()
-#
-
-
-# caca = Filter.get_filter(id=id, name="jeez", couch=couch)
-# print(caca)
-# # #
-
-# vasavoir = couch["filters"].get("user:3374821553699556532:filter:jeez")
-# print(vasavoir)
-
-# miamia = couch["filters"].view("test/simple_view", key=id, include_docs=True)
-# for i in miamia:
-#     print(i.doc.get("urls"))
-# print(miamia)
-
-# Filter.del_filter("douch", str(id), couch)
-
-# Filter.del_filter("abroad", str(id), couch)
-
-# urlll = "https://www.vinted.frrzz/member/1558"
-# dammmm = "https://www.vinted.fr/member/18544025"
-# anotherone = "https://www.vinted.fr/catalog?search_text=&catalog[]=5&brand_ids[]=2367131&brand_ids[]=272719&brand_ids[]=47829&brand_ids[]=2318552&brand_ids[]=5589958&brand_ids[]=7263752&brand_ids[]=218132&brand_ids[]=51445&brand_ids[]=609050&brand_ids[]=180798&brand_ids[]=3354969&search_id=21453042887&order=newest_first&time=1743587819"
-
-# abroad = (
-#     "https://www.vinted.de/catalog?time=1743437029&disabled_personalization=true&catalog_from=0&page=1&currency=EUR&catalog[]=1206&brand_ids[]=319730&price_to=169&order=newest_first",
-#     "https://www.vinted.pt/catalog?time=1743437313&catalog[]=2050&disabled_personalization=true&catalog_from=0&brand_ids[]=272719&page=1&order=newest_first&size_ids[]=208&status_ids[]=1&status_ids[]=2",
-#     "https://www.vinted.lt/catalog?time=1743437476&catalog[]=2050&disabled_personalization=true&catalog_from=0&brand_ids[]=872289&page=1&size_ids[]=208&size_ids[]=207&material_ids[]=44"
-#     "https://www.vinted.nl/catalog?time=1743437617&search_text=teddy%20santis&disabled_personalization=true&page=1&price_to=169&currency=EUR",
-#     "https://www.vinted.dk/catalog?time=1743437687&catalog[]=4&disabled_personalization=true&catalog_from=0&brand_ids[]=38437&page=1&size_ids[]=2&size_ids[]=3&size_ids[]=4&status_ids[]=1&status_ids[]=2&status_ids[]=6&color_ids[]=1&color_ids[]=20&color_ids[]=12&color_ids[]=15&color_ids[]=9&color_ids[]=27&color_ids[]=23&color_ids[]=14&color_ids[]=22",
-# )
-
-# geez = FilterCreation()
-# for i in abroad:
-#     geez.add_url(i)
-# geez.name = "wataaaa"
-# geez.save_filter()
-
-
-# pourvoir = FilterCreation()
-# for i in abroad:
-#     pourvoir.add_url(i)
-# pourvoir.name = "mamacita"
-# print(pourvoir.__dict__)
-# pourvoir.save_filter()
-# xssss = [
-#     "https://www.vinted.fr/api/v2/catalog/items?search_text=usa&brand_ids=1775&search_id=12043902536&order=newest_first&time=1743084178&catalog_ids=2050",
-#     "https://www.vinted.fr/api/v2/catalog/items?search_text=990v3&size_ids=783,784&brand_ids=1775,6096742,6430888&search_id=21794237624&order=newest_first&time=1743413361&catalog_ids=1231",
-#     "https://www.vinted.fr/api/v2/catalog/items?search_text=acg&size_ids=207,208,209,5,4,6&brand_ids=53,687713,128360&search_id=21453862878&order=newest_first&time=1742839653",
-#     "https://www.vinted.fr/api/v2/catalog/items?search_text=&size_ids=782,783,784&brand_ids=7319,272814&search_id=21483906252&order=newest_first&time=1742839652&catalog_ids=1231",
-#     "https://www.vinted.fr/api/v2/catalog/items?brand_ids=319730&search_id=21870165653&order=newest_first&time=1743342013&catalog_ids=1206",
-# ]
-
-
-# u = urlparse(urlll)
-# print(u.netloc)
-# machin = couch["filters"]
-
-# damnit = machin["user:3374821553699556532:filter:abroad"]["urls"]
-# damnit = urlll
-# machin.save(machin["user:3374821553699556532:filter:abroad"])
-
-# print(machin["urls"])
-
-
-# urll = UrlTransfomer(one_url)
-# print(urll.len)
-# oui = urll.all_filter()
-# print(oui)
