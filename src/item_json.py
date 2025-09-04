@@ -1,29 +1,10 @@
 import asyncio
 import json
-import json as js
 import logging
-import time
-from datetime import datetime
 
 import aiohttp
-import couchdb
 
 from db.couch_items import COUCHDB_URL, DB_NAME
-
-DB_NAME = "test_db"
-
-with open("src/json2.json", "r") as f:
-    mama = js.load(f)
-
-
-async def save_into_couch(canap, doc, sem):
-    # you might want to save item into your couch in a async fashion
-    try:
-        canap["gson"].save(doc)
-        print(f"Document {doc['_id']} inséré avec succès")
-    except couchdb.http.ResourceConflict:
-        canap["gson"].changes()
-        print(f"Document {doc['_id']} déjà existant")
 
 
 async def save_item_couch(session, item):
@@ -85,82 +66,3 @@ def json_file(json):
             f"JSON does not have items key, so surely the requests to the API has been blocked {e}"
         )
         return []
-
-
-def transform_item(json):
-    # json : dict -> list -> dict
-    trans = json["items"]
-    # trans list of dict
-    final = {str(item["id"]): item for item in trans}
-    # dict of dict with unique id
-    for i in list(final.keys()):
-        final[i] = {
-            "id": final[i].get("id"),
-            "title": final[i].get("title"),
-            "price": final[i].get("price").get("amount"),
-            "total": final[i].get("total_item_price").get("amount"),
-            "currency": final[i].get("price").get("currency_code"),
-            "brand_title": final[i].get("brand_title"),
-            "url": final[i].get("url"),
-            "photo": final[i].get("photo", {}).get("url"),  # Gestion photo si absent
-            "size": final[i].get("size_title"),
-            "status": final[i].get("status"),
-            "timestamp": time.time(),
-            "date": datetime.now().strftime("%d-%m-%Y"),
-        }
-
-    return final
-
-
-# with open("src/json2.json", "r") as f:
-#     mama = js.load(f)
-
-# # damn = mama["items"][0]
-# dude = mama["items"]
-# print(type(dude))
-# xd = json_file(dude)
-
-# print(xd[0])
-
-
-def per_id(json):
-    try:
-        # json : dict -> list -> dict
-        trans = json["items"]
-        # trans list of dict
-        final = {str(item["id"]): item for item in trans}
-        # dict of dict with unique id
-        for i in list(final.keys()):
-            final[i] = {
-                "id": final[i].get("id"),
-                "title": final[i].get("title"),
-                "price": final[i].get("price").get("amount"),
-                "total": final[i].get("total_item_price").get("amount"),
-                "currency": final[i].get("price").get("currency_code"),
-                "brand_title": final[i].get("brand_title"),
-                "url": final[i].get("url"),
-                "photo": final[i]
-                .get("photo", {})
-                .get("url"),  # Gestion photo si absent
-                "size": final[i].get("size_title"),
-                "status": final[i].get("status"),
-                "timestamp": time.time(),
-                "date": datetime.now().strftime("%d-%m-%Y"),
-            }
-
-        return final
-    except KeyError as e:
-        logging.exception(f"Clé manquante dans le JSON : {e}")
-    except TypeError:
-        logging.exception("Erreur de type : Le JSON doit être un dictionnaire Python")
-    except Exception as e:
-        logging.exception(f"Erreur inattendue : {e}")
-
-    return None  # Retourne None en cas d'erreur
-
-
-plus = json_file(mama)
-
-asyncio.run(main(plus))
-
-# print(json_file(mama))
