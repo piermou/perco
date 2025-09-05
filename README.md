@@ -3,7 +3,7 @@
 3 options:\
 -parsing the html, get the ressources etc ...\
 -have access to the API 😎, by tweaking the url ?\
--using selenium, playwright, fancy\
+-using selenium, playwright, fancy.
 
 Parsing the html could be impossible, given the fact that the items wanted are
 sometimes injected slightly after the base html appears...
