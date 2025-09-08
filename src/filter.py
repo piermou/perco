@@ -6,9 +6,7 @@ from urllib.parse import parse_qs, urlparse, urlunparse
 import couchdb
 from pydantic import BaseModel, HttpUrl
 
-from db.couch_items import couch, user_id
-
-the_id = user_id
+from config import couch, id_user
 
 
 class InvalidURLException(Exception):
@@ -65,7 +63,10 @@ class Filter:
     def init_filter(self):
         try:
             file = self.db.get(self.id)
-            return file["filter"]
+            if file is not None:
+                return file["filter"]
+            else:
+                return {}
         except (
             TypeError,
             KeyError,
@@ -119,6 +120,7 @@ class Filter:
     def transform(self, page, item):
         # url accessing the API of v by transforming an actual url
         # item is how many ... item u get into the json scrap from API's url
+        # page is what ... page of the url you are scraping to
         url_API = []
         for url in self.filter.values():
             u = urlparse(url)
@@ -158,27 +160,3 @@ class Filter:
     def browse(self, page, item=96):
         # all the items you can scrap from an json's API
         return self.transform(page, item)
-
-
-abroad = (
-    "https://www.vinted.de/catalog?time=1743437029&disabled_personalization=true&catalog_from=0&page=1&currency=EUR&catalog[]=1206&brand_ids[]=319730&price_to=169&order=merde",
-    "https://www.vinted.pt/catalog?time=1743437313&catalog[]=2050&disabled_personalization=true&catalog_from=0&brand_ids[]=272719&page=1&order=newest_first&size_ids[]=208&status_ids[]=1&status_ids[]=2",
-    "https://www.vinted.lt/catalog?time=1743437476&catalog[]=2050&disabled_personalization=true&catalog_from=0&brand_ids[]=872289&page=1&size_ids[]=208&size_ids[]=207&material_ids[]=44"
-    "https://www.vinted.nl/catalog?time=1743437617&search_text=teddy%20santis&disabled_personalization=true&page=1&price_to=169&currency=EUR",
-    "https://www.vinted.dk/catalog?time=1743437687&catalog[]=4&disabled_personalization=true&catalog_from=0&brand_ids[]=38437&page=1&size_ids[]=2&size_ids[]=3&size_ids[]=4&status_ids[]=1&status_ids[]=2&status_ids[]=6&color_ids[]=1&color_ids[]=20&color_ids[]=12&color_ids[]=15&color_ids[]=9&color_ids[]=27&color_ids[]=23&color_ids[]=14&color_ids[]=22",
-)
-
-name = ("nike", "adidas", "puma")
-
-many = (
-    "https://www.vinted.fr/catalog?search_text=&catalog[]=5&brand_ids[]=2367131&brand_ids[]=272719&brand_ids[]=47829&brand_ids[]=2318552&brand_ids[]=5589958&brand_ids[]=7263752&brand_ids[]=218132&brand_ids[]=51445&brand_ids[]=609050&brand_ids[]=3354969&brand_ids[]=461946&search_id=21453042887&order=newest_first&time=1748853496",
-    "https://www.vinted.fr/catalog?search_text=&catalog[]=1231&size_ids[]=782&size_ids[]=783&size_ids[]=784&brand_ids[]=7319&brand_ids[]=272814&search_id=21483906252&order=newest_first&time=1748853545",
-    "https://www.vinted.fr/catalog?search_text=&catalog[]=2050&brand_ids[]=369700&brand_ids[]=4756277&brand_ids[]=75090&brand_ids[]=72138&brand_ids[]=200474&brand_ids[]=576107&search_id=18098274779&order=newest_first&time=1748853624",
-)
-
-
-check = Filter(id=user_id)
-
-# print(list(check.filter.values()))
-to_scrap = check.browse(page=1)
-print(to_scrap)
