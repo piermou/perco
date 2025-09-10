@@ -53,11 +53,6 @@ class Scraper(Filter):
         super().__init__(id)
 
 
-mama = Scraper(id=src.filter.the_id)
-
-print(mama.browse(page=1))
-
-
 class Solution:
     def __init__(self) -> None:
         self.dp = {}

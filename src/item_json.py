@@ -4,7 +4,7 @@ import logging
 
 import aiohttp
 
-from db.couch_items import COUCHDB_URL, DB_NAME
+from config import COUCHDB_URL, DB_NAME
 
 
 async def save_item_couch(session, item):
