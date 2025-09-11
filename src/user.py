@@ -1,9 +1,12 @@
+import asyncio
 import logging
 import random
 import re
 import sqlite3
 import uuid
 from datetime import datetime
+from hmac import new
+from time import time
 
 import sqlalchemy
 import sqlalchemy.exc
@@ -11,9 +14,10 @@ from bcrypt import checkpw, gensalt, hashpw
 from sqlalchemy import create_engine, select
 from sqlalchemy.orm import sessionmaker
 
-from config import POSTGRES_URL
-from db.models import Base, User
+from config import POSTGRES_URL, many
+from db.models import Base, Url, User
 from src.filter import Filter
+from src.scraper import alt_main
 
 engine = create_engine(POSTGRES_URL, echo=True)
 Session = sessionmaker(bind=engine, autocommit=False, autoflush=False)
@@ -70,39 +74,31 @@ def insert_user(username: str, email: str, password: str):
         session.add(user)
         session.commit()
 
-        print("✅ user added with success")
-    except sqlalchemy.exc.IntegrityError:
+        logging.info("✅ user added with success")
+    except sqlalchemy.exc.IntegrityError as e:
         session.rollback()
-        print("email probably already exist")
+        logging.warning(
+            f"error happen for {e}, which is probably the email already used"
+        )
 
 
-# insert_user("baby", "baby@gmail.com", "db3A6ffdee!!")
-
-
-def get_users(email: str):
+def get_user(email: str):
     stmt = select(User).where(User.email == email)
     user = session.scalars(stmt).first()
     if user is not None:
-        print(user.password_hash)
+        return user
     else:
         raise ValueError("no user link to this email")
 
 
-# get_users("baby@gmail.com")
-
-
 def authenticate_user(email: str, password: str):
-    stmt = select(User.password_hash).where(User.email == email)
-    user_pw = session.scalars(stmt).first()
-    print(user_pw, type(user_pw))
-    if user_pw and checkpw(password.encode("utf-8"), user_pw.encode("utf-8")):
+    user = get_user(email)
+    if checkpw(password.encode("utf-8"), user.password_hash):
         print("authentification réussie")
         return True
     print("authentification échouée")
     return False
 
-
-authenticate_user("baby@gmail.com", "db3A6ffdee!!")
 
 # def update_mdp(user_id, old_pw, new_pw):
 #     cursor.execute("SELECT password_hash FROM users WHERE id = ?", (user_id,))
@@ -118,11 +114,49 @@ authenticate_user("baby@gmail.com", "db3A6ffdee!!")
 #         print("Te fou pas de moi")
 
 
-# def update_user(user_id, new_email):
-#     cursor.execute("UPDATE users SET email = ? WHERE user_id = ?", (new_email, user_id))
-#     conn.commit()
-#     print("Changement d'email pris en compte")
+def update_user(email, new_email):
+    user = get_user(email)
+    user.email = new_email
+    session.commit()
+    print("Changement d'email pris en compte")
 
+
+def insert_url(name: str, url: str, email: str):
+    user = get_user(email)
+    try:
+        url = Url(user_id=user.id, name=name, url=url)
+
+        session.add(url)
+        session.commit()
+
+        print("url add with success")
+    except sqlalchemy.exc.DataError as e:
+        logging.error(f"erreur pour {e}")
+
+
+def get_filter(email: str):
+    user = get_user(email)
+    stmt = select(Url.url).where(Url.user_id == user.id)
+    filter = session.scalars(stmt).all()
+    return filter
+
+
+# oupsi = get_filter("pierre.mssu@gmail.com")
+# mena = ["nike", "adidas", "merde"]
+# hihi = Filter(id=14532423)
+# for i, j in zip(mena, oupsi):
+#     hihi.add_url(name=i, url=j)
+
+# print(hihi.browse(page=1))
+
+# b = time()
+# asyncio.run(alt_main(hihi.browse(page=1)))
+# final = time()
+# print(f"Temps d'exécution : {final - b} secondes")
+
+# for i, j in zip(many, name):
+#
+#     insert_url(name=j, url=i, email="pierre.mssu@gmail.com")
 
 # def delete_user(user_id):
 #     cursor.execute("DELETE FROM users WHERE user_id = ?", (user_id,))
