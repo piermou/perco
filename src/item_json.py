@@ -16,7 +16,7 @@ async def save_item_couch(session, item):
         if resp.status == 201:
             print(f"Document {item['_id']} inséré")
         elif resp.status == 409:
-            print(f"⚠️ Document {item['_id']} déjà existant, on ignore")
+            logging.info(f"Doc {item['_id']} already exist")
         else:
             text = await resp.text()
             raise Exception(f"Erreur {resp.status}: {text}")
