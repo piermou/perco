@@ -6,7 +6,7 @@ from urllib.parse import parse_qs, urlparse, urlunparse
 import sqlalchemy.exc
 from sqlalchemy import create_engine, delete, select
 
-from app.model import PGContext, Url, User
+from app.models import PGContext, Url, User
 
 logging.basicConfig(level=logging.DEBUG)
 

@@ -1,20 +1,14 @@
 import asyncio
 import json
 import logging
-import time
 from pathlib import Path
 
 import aiohttp
 from curl_cffi import requests
 from tqdm.asyncio import tqdm_asyncio
 
-from aioserver.filter import MainFilter
 from aioserver.item_json import json_fetched
 from config import COUCHDB_URL, DB_NAME, headers
-
-# logging.basicConfig(
-#     level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
-# )
 
 
 class MainScrap:
