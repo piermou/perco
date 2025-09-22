@@ -1,120 +1,134 @@
 import asyncio
+import json
 import logging
-import os
-import random
+import time
 from pathlib import Path
-from time import time
 
 import aiohttp
-import requests as rq
-from aiohttp import CookieJar
 from curl_cffi import requests
-from requests.api import head
+from tqdm.asyncio import tqdm_asyncio
 
-from config import REDIS_PORT, headers, id_user
-from src.filter import Filter
-from src.item_json import json_file, save_item_couch
+from aioserver.filter import MainFilter
+from aioserver.item_json import json_fetched
+from config import COUCHDB_URL, DB_NAME, headers
 
-# class Scraper(Filter):
-#     def __init__(self, id: int) -> None:
-#         super().__init__(id)
-#         self.db = datab
+# logging.basicConfig(
+#     level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
+# )
 
 
-async def fetch_json(session, urls):
-    # fetch json in async
+class MainScrap:
+    #
+    def __init__(self) -> None:
+        self.sessio = aiohttp.ClientSession()
+        self.middleware = None
+        self.cookie = {}
+        self.header = None
+        pass
+
+    def browse(self):
+        pass
+
+    def feed(self):
+        pass
+
+    def saitco(self):
+        return save_item_couch(self.sessio, self.cookie)
+
+
+async def save_item_couch(session: aiohttp.ClientSession, item: dict):
+    """
+    Saving every json items scrapped in an async fashion into a NoSQL using
+    async requests from aiohttp instead of the proper couchdb library.
+    A queue worker must be use in order to update element of json,
+    the _rev ...
+    """
+
+    url = f"{COUCHDB_URL}/{DB_NAME}/{item['_id']}"
+    header = {"Content-Type": "application/json"}
+
+    async with session.put(url, data=json.dumps(item), headers=header) as resp:
+        if resp.status == 201:
+            # logging.info(f"Doc {item['_id']} insert")
+            return item
+
+        elif resp.status == 409:
+            # logging.info(f"Doc {item['_id']} already exist")
+            return
+
+        # else:
+        #    text = await resp.text()
+        #    raise Exception(f"Erreur {resp.status}: {text}")
+
+
+async def fetch_one(session: requests.AsyncSession, url: str):
+    # download one json from one url, asynchronously
     try:
-        async with session.get(urls) as response:
-            if response.status == 200:
-                print("[INFO] json fetched")
-                return await response.json()
-            elif response.status in [401, 403]:
-                REDIS_PORT.delete("access_token_web")
-                return "COOKIE_INVALID"
-
-    except aiohttp.ClientResponseError as e:
-        logging.error(f"Either the cookie is invalid or the IP is blocked: {e}")
+        r = await session.get(url)
+        if r.status_code == [400, 401, 403, 404, 406]:
+            logging.info(f"Error of type {r.status_code} on {url}")
+            return
+        else:
+            return r.json()
+    except requests.RequestsError as e:
+        print(f"Error on session of type {e}")
 
 
-async def fetch_image(session, item, sem):
-    # download one image, asynchronously
+async def fetch_image(session: aiohttp.ClientSession, item, sem):
+    """
+    Fetch image only if 'save_item_couch' return the item or not
+    hence leading to no over-scraping image we have already
+    """
     item_id = item.get("_id")
     image_url = item.get("photo")
-    if not item_id or not image_url:
-        logging.warning(f"Item avec ID {item_id} est manquant ou sans photo, ignoré.")
-        return
 
     img_filename = Path("images") / f"{item_id}.jpg"
-
-    if os.path.exists(img_filename):
-        logging.Logger(
-            f"L'image pour l'ID {item_id} existe déjà, saut du téléchargement."
-        )
-        return
 
     try:
         async with sem:
             async with session.get(image_url) as response:
                 if response.status == 200:
                     with open(img_filename, "wb") as img_file:
-                        img_file.write(await response.read())  # Télécharger l’image
-                    print(f"Image {item_id} téléchargée avec succès !")
+                        img_file.write(await response.read())  # download image
                 else:
-                    logging.error(
-                        f"Erreur HTTP {response.status} pour l'image {image_url}"
-                    )
-    except Exception as e:
-        logging.error(f"Erreur lors du téléchargement de l'image {image_url}: {e}")
+                    logging.error(f"HTTP error {response.status} for {image_url}")
+    except aiohttp.ClientConnectionError as e:
+        logging.error(f"Error during download of {image_url}: {e}")
 
 
-async def alt_main(urls, cooks):
-    # damn = random.randint(33, 66)
-    sem = asyncio.Semaphore(1000)
-    jar = CookieJar()
-    for k, v in cooks.items():
-        jar.update_cookies({k: v})
+async def main(urls):
+    #
+    response = requests.get("https://www.vinted.com", headers=headers)
+    cookies = dict(response.cookies.items())
+    sem = asyncio.Semaphore(48)
 
-    # cookies = {"access_token_web": str(cookie_tes(r, headers=headers))}
-    # cookies_dif = {"access_token_web": non}
-    async with aiohttp.ClientSession(headers=headers, cookie_jar=jar) as session:
-        # lauch the process with hopefully the right cookie
-        json_tasks = [fetch_json(session, url) for url in urls]
-        json_results = await asyncio.gather(*json_tasks)
-        print(json_results[0])
-        jsons = tuple(map(json_file, json_results))
+    # FIRST json are requested with async-curl_cffi, more robust thanks to the
+    # fingerprint added because the so-called json are hard to access
+    async with requests.AsyncSession(headers=headers, cookies=cookies) as session:
+        tasks = [fetch_one(session, url) for url in urls]
+        results = await asyncio.gather(*tasks)
 
-        save_tasks = [save_item_couch(session, item) for json in jsons for item in json]
-        await asyncio.gather(*save_tasks)
+    jsons = tuple(map(json_fetched, results))
+
+    # SECOND async-aio, still more suitable for async task is called for
+    # images requests, and images/items saving
+    async with aiohttp.ClientSession(cookies=cookies) as aiosession:
+        save_tasks = [
+            save_item_couch(aiosession, item) for json in jsons for item in json
+        ]
+
+        images_json = await tqdm_asyncio.gather(*save_tasks)
+
         # transform and save into couch before images because it could lead to fail
         # because fetch image depend on these change (change of key: value pair)
 
         image_tasks = [
-            fetch_image(session, item, sem) for json in jsons for item in json
+            fetch_image(aiosession, item, sem) for item in images_json if item
         ]
-        await asyncio.gather(*image_tasks)
+        item_saved = await tqdm_asyncio.gather(*image_tasks)
+
+        logging.info(f"{len(item_saved)} new items saved.")
 
 
-dada = Filter(id_user)
-print(list(dada.filter.values())[0])
-print(dada.browse(page=1)[0])
-response = requests.get(list(dada.filter.values())[1], headers=headers)
-print(response.status_code)
-mama = dict(response.cookies.items())
-# mama["_vinted_fr_session"] = non
-print(response.status_code, mama)
-
-
-didi = requests.get(dada.browse(page=1)[0], headers=headers, cookies=mama)
-print(didi.status_code)
-print(didi.json())
-# print(response.status_code)
-# print(
-#     response.cookies.items(),
-#     response.cookies,
-#     type(response.cookies),
-#     dict(response.cookies.items()),
-# )
-b = time()
-asyncio.run(alt_main(dada.browse(page=1), cooks=mama))
-final = time()
-print(f"Temps d'exécution : {final - b} secondes")
+if __name__ == "__main__":
+    pass
