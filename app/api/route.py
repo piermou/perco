@@ -1,8 +1,11 @@
 from datetime import datetime, timedelta
+from hashlib import sha256
 from typing import List
 
-import couchdb
 import jwt
+
+# from passlib.context import CryptContext
+from bcrypt import checkpw
 from fastapi import Depends, FastAPI, HTTPException, Request, status
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.security import OAuth2PasswordRequestForm
@@ -10,15 +13,14 @@ from fastapi.security.oauth2 import OAuth2PasswordBearer
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from jwt.exceptions import InvalidTokenError
-from passlib.context import CryptContext
 from pydantic import BaseModel
 from sqlalchemy import Boolean, Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session, sessionmaker
 from typing_extensions import Annotated
 
+from app.model import Base, User
 from config import ACCESS_TOKEN_EXPIRE_MINUTES, ALGORITHM, SECRET_KEY
-from db.models import Base
 from src.user import get_db
 
 app = FastAPI()
@@ -37,15 +39,6 @@ templates = Jinja2Templates(directory="templates")
 # )
 
 
-class User(Base):
-    __tablename__ = "users"
-    id = Column(Integer, primary_key=True)
-    email = Column(String, unique=True, index=True)
-    password_hash = Column(String)
-    created_at = Column(String)
-    disable = Column(Boolean)
-
-
 class UserBase(BaseModel):
     id: int
     email: str
@@ -54,12 +47,12 @@ class UserBase(BaseModel):
         from_attributes = True
 
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
 def verif_mdp(plain_password, password_hash):
-    return pwd_context.verify(plain_password, password_hash)
+    return checkpw(plain_password, password_hash)
 
 
 def get_user(identifier: str, db: Session = Depends(get_db)):
@@ -86,7 +79,7 @@ def authenticate_user(identifier, password, db: Session):
 
 def create_access_token(data: dict, expires_delta: timedelta):
     to_encode = data.copy()
-    expire = datetime.utcnow() + (
+    expire = datetime.now() + (
         expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     )
     to_encode.update({"exp": expire})
