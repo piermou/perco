@@ -1,2 +1,6 @@
 .venv
-
+.python-version
+images
+__pycache__
+.DS_Store
+.zed
