@@ -1,41 +1,14 @@
-import asyncio
-import json
 import logging
 
-import aiohttp
 
-from config import COUCHDB_URL, DB_NAME
-
-
-async def save_item_couch(session, item):
-    # trying to fetch data via async library because dedicted one "couchdb" is not
-    url = f"{COUCHDB_URL}/{DB_NAME}/{item['_id']}"
-    header = {"Content-Type": "application/json"}
-
-    async with session.put(url, data=json.dumps(item), headers=header) as resp:
-        if resp.status == 201:
-            print(f"Document {item['_id']} inséré")
-        elif resp.status == 409:
-            logging.info(f"Doc {item['_id']} already exist")
-        else:
-            text = await resp.text()
-            raise Exception(f"Erreur {resp.status}: {text}")
-
-
-async def main(items):
-    async with aiohttp.ClientSession() as session:
-        tasks = [save_item_couch(session, item) for item in items]
-        await asyncio.gather(*tasks)
-
-
-def json_component(json_item):
+def json_raw(json_item: dict) -> dict:
     # just chosing the right variable to stock
     price = json_item.get("price", {}) or {}
     total_price = json_item.get("total_item_price", {}) or {}
     photo = json_item.get("photo", {}) or {}
     high_res = photo.get("high_resolution", {}) or {}
 
-    return {
+    json_arrange = {
         "_id": str(json_item.get("id")),
         "title": json_item.get("title"),
         "url": json_item.get("url"),
@@ -49,20 +22,22 @@ def json_component(json_item):
         "photo": photo.get("url"),
         "status": json_item.get("status"),
         "timestamp": high_res.get("timestamp"),
+        # variable to be update
         "favourite_count": json_item.get("favourite_count"),
+        "user_id_footprint": [],
     }
 
+    return json_arrange
 
-def json_file(json):
+
+def json_fetched(json):
     try:
         items_list = json["items"]
-
-        items_list_transform = [json_component(item) for item in items_list]
-
+        items_list_transform = [json_raw(item) for item in items_list]
         return items_list_transform
 
-    except TypeError as e:
-        logging.exception(
+    except KeyError as e:
+        logging.error(
             f"JSON does not have items key, so surely the requests to the API has been blocked {e}"
         )
         return []
