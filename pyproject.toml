@@ -6,14 +6,29 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "aiohttp>=3.12.15",
+    "aiopg>=1.4.0",
+    "bcrypt>=4.3.0",
     "beautifulsoup4>=4.13.5",
     "couchdb>=1.2",
     "curl-cffi>=0.13.0",
     "fastapi[standard]>=0.116.1",
     "lxml>=6.0.1",
+    "passlib>=1.7.4",
+    "pydantic>=2.11.7",
+    "pyjwt>=2.10.1",
+    "pyyaml>=6.0.2",
+    "redis>=6.4.0",
+    "requests>=2.32.5",
+    "selectolax>=0.3.34",
+    "sqlalchemy>=2.0.43",
+    "tqdm>=4.67.1",
 ]
 
 
 [tool.pyright]
 venvPath = "."
 venv = ".venv"
+
+
+[tool.ruff]
+extend-ignore = ["F401", "W293"]
