@@ -19,9 +19,9 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session, sessionmaker
 from typing_extensions import Annotated
 
-from app.model import Base, User
+from app.crud import get_db
+from app.models import Base, User
 from config import ACCESS_TOKEN_EXPIRE_MINUTES, ALGORITHM, SECRET_KEY
-from src.user import get_db
 
 app = FastAPI()
 

@@ -7,7 +7,8 @@ from fastapi.security import OAuth2PasswordRequestForm
 
 from app import crud, security
 from app.api.depends import CurrentUser, SessionDep, Token
-from app.models import UserPublic
+from app.pydc_models import UserPublic
+from app.utils import generate_password_reset_token
 from config import ACCESS_TOKEN_EXPIRE_MINUTES
 
 router = APIRouter(tags=["login"])
@@ -48,7 +49,7 @@ def test_token(current_user: CurrentUser) -> Any:
     return current_user
 
 
-@router.post("/password_recovery/{email}")
+@router.post("/password_recovery/{email}")  # THIS ONE IS NOT FINISHED YET !!
 def recover_password(email: str, session: SessionDep) -> str:
     """
     Password recovery
@@ -61,3 +62,6 @@ def recover_password(email: str, session: SessionDep) -> str:
             status_code=404,
             detail="No email attach to this user.",
         )
+    password_reset_token = generate_password_reset_token(email=email)
+    # email_data = generate_reset_password_email()
+    return password_reset_token
