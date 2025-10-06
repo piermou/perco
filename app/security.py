@@ -6,12 +6,10 @@ from typing import Any
 import jwt
 from passlib.context import CryptContext
 
-from config import SECRET_KEY
+from config import ALGORITHM, SECRET_KEY
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-
-ALGORITHM = "HS256"
 
 patterns = [r"[A-Z]", r"[a-z]", r"\d", r"[!@#$%^&*(),.?\":{}|<>]"]
 
