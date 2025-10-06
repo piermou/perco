@@ -7,27 +7,9 @@ import aiohttp
 from curl_cffi import requests
 from tqdm.asyncio import tqdm_asyncio
 
+from aioserver.filter import Filter
 from aioserver.item_json import json_fetched
 from config import COUCHDB_URL, DB_NAME, headers
-
-
-class MainScrap:
-    #
-    def __init__(self) -> None:
-        self.sessio = aiohttp.ClientSession()
-        self.middleware = None
-        self.cookie = {}
-        self.header = None
-        pass
-
-    def browse(self):
-        pass
-
-    def feed(self):
-        pass
-
-    def saitco(self):
-        return save_item_couch(self.sessio, self.cookie)
 
 
 async def save_item_couch(session: aiohttp.ClientSession, item: dict):
@@ -49,10 +31,6 @@ async def save_item_couch(session: aiohttp.ClientSession, item: dict):
         elif resp.status == 409:
             # logging.info(f"Doc {item['_id']} already exist")
             return
-
-        # else:
-        #    text = await resp.text()
-        #    raise Exception(f"Erreur {resp.status}: {text}")
 
 
 async def fetch_one(session: requests.AsyncSession, url: str):
