@@ -4,14 +4,29 @@ from functools import lru_cache, partialmethod, singledispatch
 from urllib.parse import parse_qs, urlparse, urlunparse
 
 import sqlalchemy.exc
-from sqlalchemy import create_engine, delete, select
+from sqlalchemy import select
+from sqlalchemy.orm import sessionmaker
 
-from app.models import PGContext, Url, User
+from app.models import Url, User
+from config import engine
 
-logging.basicConfig(level=logging.DEBUG)
+
+class PGContext:
+    #
+    Session = sessionmaker(bind=engine, autocommit=False, autoflush=False)
+
+    def __enter__(self):
+        self.session = self.Session()
+        return self.session
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if exc_type:
+            logging.error(f"Error SQLAlchemy: {exc_value}")
+            self.session.rollback()
+        self.session.close()
 
 
-class MainFilter:
+class Filter:
     #
     ALLOW_DOMAIN = re.compile(r"^https://www\.vinted\.(\w{2,3})/catalog\?(.*)$")
 
@@ -133,7 +148,3 @@ class MainFilter:
     All the items you can scrap from an json's API, I believe you can
     push further but at what cost...
     """
-
-
-if __name__ == "__main__":
-    pass
