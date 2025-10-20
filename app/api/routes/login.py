@@ -6,13 +6,13 @@ from fastapi.exceptions import HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.security import OAuth2PasswordRequestForm
 
+import config
 from app import crud, security
 from app.api.depends import (
     CurrentUser,
     SessionDep,
     Token,
     get_current_active_superuser,
-    get_current_user,
 )
 from app.pydc_models import NewPassword, UserPublic
 from app.utils import (
@@ -20,7 +20,6 @@ from app.utils import (
     generate_reset_password_email,
     verify_password_reset_token,
 )
-from config import ACCESS_TOKEN_EXPIRE_MINUTES
 
 router = APIRouter(tags=["login"])
 
@@ -47,7 +46,7 @@ def login_access_token(
             status_code=400,
             detail="Inactive user",
         )
-    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token_expires = timedelta(minutes=config.ACCESS_TOKEN_EXPIRE_MINUTES)
     return Token(
         access_token=security.create_access_token(
             user.id, expires_delta=access_token_expires

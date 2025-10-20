@@ -1,4 +1,3 @@
-from inspect import isfunction
 from typing import Annotated
 
 import jwt
@@ -6,19 +5,16 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jwt import InvalidTokenError
 from pydantic import BaseModel, ValidationError
-from sqlalchemy.event.registry import exc
 from sqlalchemy.orm import Session
 from typing_extensions import Generator
 
 from app.pydc_models import Token, TokenPayload, UserEnd
-
-# from app.security import ALGORITHM
 from config import SECRET_KEY, engine
 
 ALGORITHM = "HS256"
 
 
-reusable_oauth2 = OAuth2PasswordBearer(tokenUrl="/api/v1/login/access_token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/login/access_token")
 
 
 def get_db() -> Generator[Session, None, None]:
@@ -27,13 +23,15 @@ def get_db() -> Generator[Session, None, None]:
 
 
 SessionDep = Annotated[Session, Depends(get_db)]
-TokenDep = Annotated[str, Depends(reusable_oauth2)]
+TokenDep = Annotated[str, Depends(oauth2_scheme)]
 
 
 def get_current_user(session: SessionDep, token: TokenDep) -> UserEnd:
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        token_data = TokenPayload(**payload)
+        token_data = TokenPayload(
+            **payload
+        )  # ** is used to unpack dictionary payload, each key-value pair is passed as separate arguments, so you know.
     except (InvalidTokenError, ValidationError):
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
